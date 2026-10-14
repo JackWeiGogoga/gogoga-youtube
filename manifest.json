@@ -1,0 +1,10 @@
+{
+  "id": "gogoga-youtube",
+  "name": "gogoga YouTube",
+  "version": "0.2.0",
+  "minAppVersion": "1.11.4",
+  "description": "Manage YouTube subscriptions, account sync, groups, recent uploads, and saved video notes inside Obsidian.",
+  "author": "jackwei",
+  "isDesktopOnly": false,
+  "authorUrl": "https://github.com/JackWeiGogoga"
+}

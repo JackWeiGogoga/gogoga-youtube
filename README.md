@@ -1,8 +1,13 @@
 # gogoga YouTube
 
+**English** | [简体中文](https://github.com/JackWeiGogoga/gogoga-youtube/blob/main/README.zh-CN.md)
+
 An Obsidian companion plugin for managing YouTube subscriptions. Public RSS and
 Google Takeout work without login; optional Google OAuth account sync keeps the
 channel list aligned with the signed-in YouTube account.
+
+The interface (commands, modals, and settings) is currently in Simplified
+Chinese; Chinese labels below are followed by an English translation.
 
 The plugin keeps the fast-moving video feed in plugin data, writes one ordinary
 Markdown file per channel for long-lived metadata and groups, and creates video
@@ -35,14 +40,14 @@ Copy these files into `<vault>/.obsidian/plugins/gogoga-youtube/`:
 - `styles.css`
 
 Reload Obsidian, then enable **gogoga YouTube** under Community plugins. Use the
-YouTube ribbon icon or run **打开 YouTube 订阅** from the command palette.
+YouTube ribbon icon or run **打开 YouTube 订阅** (Open YouTube subscriptions) from the command palette.
 
 The [gogoga theme](https://github.com/JackWeiGogoga/gogoga-theme) repo's
 `scripts/dev-install.sh <vault-path>` also installs it.
 
 ## Add subscriptions
 
-Choose **添加或导入 YouTube 频道** and use any mixture of:
+Choose **添加或导入 YouTube 频道** (Add or import YouTube channels) and use any mixture of:
 
 ```text
 https://www.youtube.com/@veritasium
@@ -64,8 +69,8 @@ is not configured.
    add the Google account you use for YouTube as a test user.
 3. Create an OAuth Client ID of type **Desktop app**.
 4. In Obsidian, open **gogoga YouTube → Options**, paste the Client ID, save
-   the Client Secret to Obsidian SecretStorage, and choose **Authorize Google
-   account**.
+   the Client Secret to Obsidian SecretStorage, and choose **授权 Google 账号**
+   (Authorize Google account).
 5. Complete consent in the system browser. Obsidian then synchronizes the
    account subscriptions and continues fetching recent videos through RSS.
 
@@ -115,4 +120,4 @@ its dashboard state.
 
 ## License
 
-MIT, see [LICENSE](LICENSE).
+MIT, see [LICENSE](https://github.com/JackWeiGogoga/gogoga-youtube/blob/main/LICENSE).

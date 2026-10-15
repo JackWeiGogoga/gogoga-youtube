@@ -137,3 +137,36 @@ test('maps authorized subscription items and removes duplicate channels', () => 
     },
   ]);
 });
+
+test('English and Chinese UI string tables define the same keys', () => {
+  const en = Object.keys(helpers.STRINGS.en).sort();
+  const zh = Object.keys(helpers.STRINGS.zh).sort();
+  assert.deepEqual(zh, en);
+});
+
+test('translates UI strings with interpolation and plurals per locale', () => {
+  try {
+    helpers.setLocale('en');
+    assert.equal(helpers.t('command.open'), 'Open YouTube subscriptions');
+    assert.equal(helpers.t('notice.added', { count: 1 }), 'Added 1 channel');
+    assert.equal(helpers.t('notice.added', { count: 3 }), 'Added 3 channels');
+    assert.equal(helpers.formatRelativeTime(''), 'Never');
+    assert.equal(
+      helpers.formatRelativeTime(new Date(Date.now() - 5 * 60 * 1000).toISOString()),
+      '5 minutes ago'
+    );
+    assert.equal(helpers.formatViews(1), '1 view');
+
+    helpers.setLocale('zh');
+    assert.equal(helpers.t('command.open'), '打开 YouTube 订阅');
+    assert.equal(helpers.t('notice.added', { count: 3 }), '已添加 3 个频道');
+    assert.equal(helpers.formatRelativeTime(''), '从未');
+    assert.equal(
+      helpers.formatRelativeTime(new Date(Date.now() - 5 * 60 * 1000).toISOString()),
+      '5分钟前'
+    );
+    assert.equal(helpers.formatViews(12000), '1.2万次观看');
+  } finally {
+    helpers.setLocale('en');
+  }
+});

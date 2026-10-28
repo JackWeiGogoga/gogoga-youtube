@@ -118,6 +118,10 @@ its dashboard state.
 - Public feeds expose only a recent window of uploads, so this MVP is designed
   for ongoing incremental tracking rather than complete channel history.
 
+## Changelog
+
+What changed in each version is in [CHANGELOG.md](CHANGELOG.md) ([中文](CHANGELOG.zh-CN.md)). Add the new version there before releasing: the release notes are taken from it, and the release fails when the entry is missing.
+
 ## License
 
 MIT, see [LICENSE](https://github.com/JackWeiGogoga/gogoga-youtube/blob/main/LICENSE).

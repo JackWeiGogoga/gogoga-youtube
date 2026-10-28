@@ -98,6 +98,10 @@ YouTube/
 - Obsidian 关闭时，插件无法刷新。
 - 公开 feed 只提供最近一段时间的上传，因此这个 MVP 面向持续的增量跟踪，而不是完整的频道历史。
 
+## 更新日志
+
+每个版本的变化见 [CHANGELOG.zh-CN.md](CHANGELOG.zh-CN.md)（[English](CHANGELOG.md)）。发版前先写好新版本的条目：Release 说明从这里取，没写时发布会失败。
+
 ## 许可证
 
 MIT，参见 [LICENSE](https://github.com/JackWeiGogoga/gogoga-youtube/blob/main/LICENSE)。

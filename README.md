@@ -33,14 +33,22 @@ from flooding the vault with thousands of files.
 
 ## Install
 
-Copy these files into `<vault>/.obsidian/plugins/gogoga-youtube/`:
+### With BRAT (recommended)
 
-- `main.js`
-- `manifest.json`
-- `styles.css`
+This plugin isn't in the community directory. Install it with [BRAT](https://github.com/TfTHacker/obsidian42-brat), which also keeps it updated: install and enable **BRAT** from the community plugins, click **Add beta plugin** in BRAT's settings, enter `https://github.com/JackWeiGogoga/gogoga-youtube`, then enable **gogoga YouTube** under Settings → Community plugins.
 
-Reload Obsidian, then enable **gogoga YouTube** under Community plugins. Use the
-YouTube ribbon icon or run **Open YouTube subscriptions** from the command palette.
+### Manual install
+
+For offline machines (such as a company network) or to pin a specific version:
+
+1. Open the [Releases page](https://github.com/JackWeiGogoga/gogoga-youtube/releases/latest) and download the three files `main.js`, `manifest.json`, `styles.css` under **Assets**. **Don't download the Source code archives**: they are the source code, which Obsidian can't load.
+2. In your vault's folder, go to `.obsidian/plugins/`, create a folder named `gogoga-youtube`, and put the files in it, so you end up with paths like `<vault>/.obsidian/plugins/gogoga-youtube/main.js`.
+   - `.obsidian` is a hidden folder: press `⌘ ⇧ .` in Finder on macOS; on Windows, tick **Hidden items** under **View** in File Explorer.
+3. Restart Obsidian (or click the refresh button under Settings → Community plugins), then enable **gogoga YouTube** in the list of installed plugins.
+
+On phones, where moving files around is awkward, use BRAT.
+
+Once installed, use the YouTube ribbon icon or run **Open YouTube subscriptions** from the command palette.
 
 The [gogoga theme](https://github.com/JackWeiGogoga/gogoga-theme) repo's
 `scripts/dev-install.sh <vault-path>` also installs it.
